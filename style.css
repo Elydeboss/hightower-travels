@@ -271,6 +271,10 @@ header::before {
   margin-inline-start: unset;
 }
 
+.destinations-section {
+  margin-top: 10rem;
+}
+
 .destination-card p {
   color: var(--text-light);
 }
@@ -343,6 +347,10 @@ header::before {
 }
 
 /* Journey card */
+.journey-section {
+  margin-top: 17rem;
+}
+
 .journey-features-grid {
   margin-top: 2rem;
   display: grid;
@@ -423,6 +431,7 @@ header::before {
   display: grid;
   gap: 1rem;
   overflow: hidden;
+  margin-top: 10rem;
 }
 
 .showcase-media img {
@@ -453,7 +462,7 @@ header::before {
   padding: 1rem;
   font-weight: 600;
   color: var(--text-dark);
-  background-image: url("assets/header-bg.jpg");
+  background-image: url("img/header-bg.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -463,6 +472,7 @@ header::before {
 .stats-section {
   display: grid;
   gap: 2rem;
+  margin-top: 12rem;
 }
 
 .stat-card {
@@ -483,6 +493,9 @@ header::before {
   color: var(--text-light);
 }
 
+.discover-section {
+  margin-top: 15rem;
+}
 .discover-grid {
   margin-top: 4rem;
   display: grid;
