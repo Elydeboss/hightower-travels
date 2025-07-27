@@ -466,6 +466,7 @@ header::before {
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 5px;
+  border: none;
 }
 
 .stats-section {
@@ -547,7 +548,7 @@ header::before {
 
 .testimonial-wrapper {
   margin-top: 5rem;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -586,12 +587,14 @@ header::before {
   gap: 1.5rem;
 }
 
+/*for large screens like latops and soem tablets*/
 @media (min-width: 640px) {
   .testimonial-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/*for larger screens like monitors*/
 @media (min-width: 1024px) {
   .testimonial-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -667,14 +670,14 @@ header::before {
 }
 /*end of section*/
 
-/* Footer main*/
+/* main Footer*/
 footer {
   background-color: var(--extra-light);
   margin-top: 2rem;
-  padding: 2rem 2rem;
+  padding: 6rem 10rem;
 }
 
-/* Footer layout */
+/* Footer grid */
 .footer-content {
   display: grid;
   gap: 4rem 2rem;
@@ -683,6 +686,7 @@ footer {
 /* Brand and description */
 .footer-column p {
   max-width: 300px;
+  font-size: 1rem;
   margin-block: 2rem;
   color: var(--text-light);
 }
@@ -757,6 +761,9 @@ footer {
 }
 
 .subscribe-btn {
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
   padding: 0.75rem;
   font-size: 1rem;
   font-weight: 600;
@@ -770,11 +777,13 @@ footer {
   text-align: center;
 }
 .footer-logo {
-  color: var(--primary-color);
+  color: var(--text-dark);
+  font-size: 2rem;
+  font-weight: 600;
 }
 /* footer styles ends here*/
 
-/* Responsive styles for screens larger than 540px */
+/* Responsive styles for 540px(tablet screens) */
 @media (min-width: 540px) {
   .destinations-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -800,7 +809,7 @@ footer {
   }
 }
 
-/* Responsive styles for screens smaller than 768px */
+/* Responsive styles for screens smaller than 768px,like phone screens */
 @media (max-width: 768px) {
   .showcase-title {
     margin-bottom: 1rem;
@@ -808,6 +817,8 @@ footer {
     font-weight: 600;
   }
   .last {
+    font-size: 1rem;
+    font-weight: 600;
     background-color: var(--extra-light);
     padding: 0.75rem 1.5rem;
     color: var(--primary-color);
@@ -817,18 +828,25 @@ footer {
   .last:hover {
     background-color: var(--primary-color);
     color: white;
-    border: 2px solid var(--extra-light);
+    border: 1px solid var(--extra-light);
+    font-size: 1rem;
+    font-weight: 600;
   }
 
   section {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .testimonial-wrapper {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-/* Styles for the Hero Section remain on header */
-
-/* Responsive styles for screens larger than 768px */
+/* Responsive styles for screens larger than 768px, like laptop and monitors */
 @media (min-width: 768px) {
   nav {
     position: static;
@@ -869,19 +887,23 @@ footer {
 
   .last {
     background-color: white;
-    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.9rem;
     margin-left: 10rem;
     border-radius: 5rem;
     transition: all 0.3s ease-in-out;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     color: var(--primary-color);
   }
 
   .last:hover {
     background-color: var(--primary-color-dark);
+    font-size: 1rem;
+    font-weight: 600;
     color: var(--extra-light);
     border: 2px solid var(--primary-color-dark);
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.9rem;
     border-radius: 5rem;
     transition: all 0.3s ease-in-out;
   }
