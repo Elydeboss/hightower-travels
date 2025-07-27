@@ -8,6 +8,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
@@ -40,18 +42,38 @@
 
     <!-- Hero section -->
     <header id="home">
-      <div class="hero-container">
+      <div class="hero-container" data>
         <!-- Hero content: text and buttons -->
         <div class="hero-content">
-          <p class="hero-tagline">ELEVATE YOUR TRAVEL JOURNEY</p>
-          <h1 class="hero-heading">
+          <p data-aos="fade-right" data-aos-delay="100" data-aos-duration="600">
+            ELEVATE YOUR TRAVEL JOURNEY
+          </p>
+          <h1
+            class="hero-heading"
+            data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="600"
+          >
             Experience The Magic Of
             <span class="highlight">Flight</span
             ><span class="highlight-exclaim">!</span>
           </h1>
           <div class="hero-actions">
-            <button class="btn primary-btn">Book A Trip Now</button>
-            <a href="#" class="video-link">
+            <button
+              class="btn primary-btn"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="600"
+            >
+              Book A Trip Now
+            </button>
+            <a
+              href="#"
+              class="video-link"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="600"
+            >
               <span><i class="ri-play-circle-fill"></i></span>
             </a>
           </div>
@@ -59,7 +81,13 @@
 
         <!-- Hero image -->
         <div class="hero-image">
-          <img src="img/header.png" alt="header" />
+          <img
+            src="img/header.png"
+            alt="header"
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-duration="600"
+          />
         </div>
       </div>
     </header>
@@ -72,7 +100,12 @@
         Discover the Most Loved Destinations Around the Globe
       </p>
       <div class="destinations-grid">
-        <div class="destination-card destination-card--featured">
+        <div
+          class="destination-card destination-card--featured"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="600"
+        >
           <img
             src="img/destination-1.jpg"
             alt="Tradition and Futurism in New York City"
@@ -88,7 +121,12 @@
           </div>
         </div>
 
-        <div class="destination-card">
+        <div
+          class="destination-card"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="600"
+        >
           <img src="img/destination-2.jpg" alt="The City of Lights in Paris" />
           <div class="destination-card__details">
             <div class="destination-info">
@@ -101,7 +139,12 @@
           </div>
         </div>
 
-        <div class="destination-card">
+        <div
+          class="destination-card"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="600"
+        >
           <img src="img/destination-3.jpg" alt="Island of the Gods in Bali" />
           <div class="destination-card__details">
             <div class="destination-info">
@@ -178,11 +221,21 @@
     <!-- Showcase section -->
 
     <section class="showcase-section" id="package">
-      <div class="showcase-media">
+      <div
+        class="showcase-media"
+        data-aos="fade-right"
+        data-aos-delay="100"
+        data-aos-duration="600"
+      >
         <img src="img/girl-1.jpg" alt="Showcase image" />
       </div>
 
-      <div class="showcase-text">
+      <div
+        class="showcase-text"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="600"
+      >
         <h4 class="showcase-title">UNLEASH WANDERLUST WITH HIGHTOWERS</h4>
         <p class="showcase-paragraph">
           Embark on a journey like no other with Skywings, where your travel
@@ -195,7 +248,12 @@
           yourself in diverse cultures, and create unforgettable memories that
           will last a lifetime.
         </p>
-        <p class="showcase-paragraph">
+        <p
+          class="showcase-paragraph"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="600"
+        >
           With Skywings as your ultimate travel companion, exploring the wonders
           of the world has never been easier. Our insider tips and local
           insights give you the tools to navigate new places with confidence and
@@ -203,7 +261,12 @@
           home, we are dedicated to making your travel experience seamless and
           enriching.
         </p>
-        <div class="showcase-action">
+        <div
+          class="showcase-action"
+          data-aos="fade-up"
+          data-aos-delay="700"
+          data-aos-duration="600"
+        >
           <button class="btn-cta">
             Book A Flight Now
             <span><i class="ri-arrow-right-line"></i></span>
@@ -215,16 +278,31 @@
     <!-- End Showcase section -->
 
     <!-- Banner section -->
-    <section class="stats-section">
+    <section
+      class="stats-section"
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-duration="600"
+    >
       <div class="stat-card">
         <h4 class="stat-number">10+</h4>
         <p class="stat-label">Years Experience</p>
       </div>
-      <div class="stat-card">
+      <div
+        class="stat-card"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="600"
+      >
         <h4 class="stat-number">12K</h4>
         <p class="stat-label">Happy Clients</p>
       </div>
-      <div class="stat-card">
+      <div
+        class="stat-card"
+        data-aos="fade-up"
+        data-aos-delay="600"
+        data-aos-duration="600"
+      >
         <h4 class="stat-number">4.8</h4>
         <p class="stat-label">Overall Ratings</p>
       </div>
@@ -453,6 +531,17 @@
     </footer>
     <!--end of footer section -->
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Initialize AOS (Animate On Scroll)
+      AOS.init({
+        duration: 2000, // Animation duration (1s)
+        easing: "ease-in-out", // Smooth easing
+        once: false, // Animate everytime
+        mirror: true,
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

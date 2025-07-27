@@ -24,6 +24,7 @@
 section {
   padding-left: 8rem;
   padding-right: 8rem;
+  scroll-margin-top: 10px;
 }
 
 /* Smooth scroll behavior */
@@ -205,6 +206,8 @@ header::before {
 /* Hero content */
 .hero-content {
   padding: 4rem 1rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
 }
 
 .hero-tagline {
