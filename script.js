@@ -26,3 +26,17 @@ window.addEventListener("resize", () => {
     toggleIcon.setAttribute("class", "ri-menu-line");
   }
 });
+
+const track = document.getElementById("sliderTrack");
+const prev = document.getElementById("prevBtn");
+const next = document.getElementById("nextBtn");
+
+const scrollAmount = 300; // Amount to scroll per click
+
+prev.addEventListener("click", () => {
+  track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+});
+
+next.addEventListener("click", () => {
+  track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+});

@@ -260,11 +260,7 @@ header::before {
   color: var(--white);
   background-color: var(--primary-color);
 }
-
-/* Hero image wrapper (if you need it) */
-.hero-image {
-  /* add any layout rules here, e.g. grid-area or padding */
-}
+/*end of section*/
 
 .destinations-section :is(.section-heading, .section-subtext) {
   text-align: left;
@@ -533,82 +529,146 @@ header::before {
   color: var(--text-dark);
 }
 
-/*
-.swiper {
-  margin-top: 4rem;
+.testimonial-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+.heading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Container and section Layout of client reviews or testimonial */
+
+.testimonial-wrapper {
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+@media (min-width: 640px) {
+  .testimonial-wrapper {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial-wrapper {
+    padding: 0 5rem;
+  }
+}
+
+.testimonial-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.testimonial-description {
+  color: #4b5563;
+  margin-bottom: 2.5rem;
+}
+
+/* Grid layout */
+.testimonial-grid-section {
+  padding: 2rem 1rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card styles */
+.testimonial-card {
   width: 100%;
 }
 
-.swiper-slide {
-  min-width: 375px;
-}
-
-.client__card {
-  padding: 5px;
-  background-color: var(--extra-light);
+.testimonial-card-body {
+  background-color: #f3f4f6;
   border-radius: 1rem;
-  transition: 0.3s;
-}
-
-.client__card:hover {
-  background-color: var(--primary-color);
-}
-
-.client__content {
   padding: 1rem;
-  background-color: var(--white);
-  border-radius: calc(1rem - 5px);
+  transition: background-color 0.3s ease;
+  height: 100%;
 }
 
-.client__rating {
+.testimonial-card-body:hover {
+  background-color: #3b82f6;
+}
+
+/* Inner content */
+.testimonial-content {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
   margin-bottom: 1rem;
-  color: var(--primary-color);
 }
 
-.client__content p {
-  color: var(--text-dark);
+.testimonial-stars {
+  color: #3b82f6;
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
 }
 
-.client__details {
-  padding: 1rem;
+.testimonial-content p {
+  color: #1f2937;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* testimonial section Footer */
+.testimonial-footer {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding: 0 1rem 1rem;
 }
 
-.client__details img {
-  max-width: 50px;
-  border-radius: 100%;
+.testimonial-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.client__details h4 {
-  font-size: 1.1rem;
+.testimonial-footer h4 {
+  font-size: 0.875rem;
   font-weight: 600;
-  color: var(--text-dark);
-  transition: 0.3s;
+  margin: 0;
+  color: #1f2937;
 }
 
-.client__card:hover h4 {
-  color: var(--white);
+.testimonial-footer h5 {
+  font-size: 0.875rem;
+  margin: 0;
+  color: #9ca3af;
 }
+/*end of section*/
 
-.client__details h5 {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text-light);
-  transition: 0.3s;
-}
-
-.client__card:hover h5 {
-  color: var(--extra-light);
-}
-*/
-
-/* Footer */
-
+/* Footer main*/
 footer {
   background-color: var(--extra-light);
-  margin-top: 4rem;
+  margin-top: 2rem;
+  padding: 2rem 2rem;
 }
 
 /* Footer layout */
@@ -700,13 +760,16 @@ footer {
   border-radius: 5px;
 }
 
-/* Footer bottom bar */
 .footer-bottom {
   padding: 1rem;
   font-size: 0.9rem;
   color: var(--text-light);
   text-align: center;
 }
+.footer-logo {
+  color: var(--primary-color);
+}
+/* footer styles ends here*/
 
 /* Responsive styles for screens larger than 540px */
 @media (min-width: 540px) {
@@ -752,6 +815,11 @@ footer {
     background-color: var(--primary-color);
     color: white;
     border: 2px solid var(--extra-light);
+  }
+
+  section {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
