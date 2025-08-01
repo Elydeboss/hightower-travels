@@ -1,8 +1,7 @@
-/* Import Google Font */
-
+/* Google Font */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
-/* CSS Variables for reusable values */
 
+/* default css Variables for reusable values */
 :root {
   --primary-color: #2887ff;
   --primary-color-dark: #2476da;
@@ -26,8 +25,6 @@ section {
   padding-right: 8rem;
   scroll-margin-top: 10px;
 }
-
-/* Smooth scroll behavior */
 
 html,
 body {
@@ -460,6 +457,7 @@ header::before {
   margin-bottom: 1.75rem;
   padding: 1rem;
   font-weight: 600;
+  font-size: 1rem;
   color: var(--text-dark);
   background-image: url("img/header-bg.jpg");
   background-size: cover;
@@ -467,6 +465,9 @@ header::before {
   background-repeat: no-repeat;
   border-radius: 5px;
   border: none;
+}
+.btn-cta:hover {
+  color: white;
 }
 
 .stats-section {
