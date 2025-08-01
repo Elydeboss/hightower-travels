@@ -468,6 +468,7 @@ header::before {
 }
 .btn-cta:hover {
   color: white;
+  cursor: pointer;
 }
 
 .stats-section {
