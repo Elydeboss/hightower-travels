@@ -364,6 +364,7 @@ header::before {
   margin-bottom: 2rem;
 }
 
+/*slideup cards styles*/
 .feature-icon {
   padding: 1.2rem;
   background-color: var(--extra-light);
@@ -422,6 +423,7 @@ header::before {
   color: var(--extra-light);
   font-size: 9px;
 }
+/*end of card slideup section*/
 
 .showcase-section {
   display: grid;
@@ -538,7 +540,7 @@ header::before {
 .testimonial-section {
   padding: 2rem 1rem;
   text-align: center;
-  max-width: 1200px;
+
   margin: auto;
 }
 .heading {
@@ -583,29 +585,21 @@ header::before {
   padding: 2rem 1rem;
 }
 
+/*parent card for scrolling card*/
 .testimonial-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 1.5rem;
+  overflow-x: scroll;
 }
 
-/*for large screens like latops and soem tablets*/
-@media (min-width: 640px) {
-  .testimonial-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/*for larger screens like monitors*/
-@media (min-width: 1024px) {
-  .testimonial-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Card styles */
+/*scrolling Card styles */
 .testimonial-card {
+  flex: 0 0 auto;
   width: 100%;
+  max-width: 350px;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
 }
 
 .testimonial-card-body {
